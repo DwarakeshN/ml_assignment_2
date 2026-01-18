@@ -21,7 +21,7 @@ from sklearn.metrics import (
 # -------------------------------
 st.set_page_config(page_title="Stellar Classification", layout="centered")
 
-st.title("Stellar Object Classification (SDSS)")
+st.title("Stellar Object Classification")
 st.write(
     "This app classifies celestial objects into **Star**, **Galaxy**, or **Quasar** "
     "using multiple machine learning models."
@@ -135,3 +135,4 @@ if uploaded_file is not None:
     ax.set_ylabel("True Label")
 
     st.pyplot(fig)
+
