@@ -27,6 +27,16 @@ st.write(
     "using multiple machine learning models."
 )
 
+st.subheader("Sample Test Dataset")
+
+with open("test.csv", "rb") as file:
+    st.download_button(
+        label="Download test.csv",
+        data=file,
+        file_name="test.csv",
+        mime="text/csv"
+    )
+
 # -------------------------------
 # Load Models and Scaler
 # -------------------------------
@@ -135,4 +145,5 @@ if uploaded_file is not None:
     ax.set_ylabel("True Label")
 
     st.pyplot(fig)
+
 
